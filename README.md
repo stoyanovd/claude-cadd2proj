@@ -2,7 +2,7 @@
 
 One-click file transfer from Claude chat to project knowledge base.
 
-[![Install on Greasy Fork](https://img.shields.io/badge/Install-Greasy_Fork-green)](https://greasyfork.org/en/scripts/570883-claude-add-to-project)
+[![Install on Greasy Fork](https://img.shields.io/badge/Install-Greasy_Fork-green)](https://greasyfork.org/en/scripts/570889-claude-add-to-project)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
@@ -30,7 +30,7 @@ For messages with multiple files, an **📁 Add all to project** button appears 
 ## 📥 Install
 
 1. Install [Violentmonkey](https://violentmonkey.github.io/) (recommended) or [Tampermonkey](https://www.tampermonkey.net/)
-2. [**Install from Greasy Fork**](https://greasyfork.org/en/scripts/570883-claude-add-to-project)
+2. [**Install from Greasy Fork**](https://greasyfork.org/en/scripts/570889-claude-add-to-project)
 
 Or install directly from this repo: click [`claude-add-to-project.user.js`](claude-add-to-project.user.js) → "Raw" → your userscript manager will offer to install.
 
