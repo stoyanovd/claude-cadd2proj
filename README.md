@@ -89,9 +89,9 @@ Sort, filter, list view, version tracking and Select All for Claude project file
 
 | Browser | Status |
 |---------|--------|
-| Brave | Primary development & testing |
+| Brave + Violentmonkey | Primary dev environment |
 | Chrome | Should work |
-| Firefox + Violentmonkey | Tested |
+| Firefox + Violentmonkey | Should work |
 | Edge | Should work |
 | Opera | Should work |
 | Safari | Untested |
