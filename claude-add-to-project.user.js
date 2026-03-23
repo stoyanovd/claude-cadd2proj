@@ -1,19 +1,20 @@
 // ==UserScript==
 // @name         Claude — Add to Project
 // @namespace    https://github.com/stoyanovd/claude-cadd2proj
-// @version      2.6.1
+// @version      2.6.2
 // @description  Adds "Add to project" and "Add all to project" buttons for file artifacts in Claude chat. One-click file transfer from conversation to project knowledge.
 // @description:ru  Кнопки «Add to project» для файлов-артефактов в чате Claude. Быстрый перенос файлов из переписки в проект.
 // @author       Dmitry S
 // @license      MIT
 // @homepageURL  https://github.com/stoyanovd/claude-cadd2proj
 // @supportURL   https://github.com/stoyanovd/claude-cadd2proj/issues
-// @source       https://github.com/stoyanovd/claude-cadd2proj/tree/v2.6.1
+// @source       https://github.com/stoyanovd/claude-cadd2proj/tree/v2.6.2
 // @match        https://claude.ai/*
 // @grant        none
 // @run-at       document-idle
+// @compatible   brave Primary development & testing (Violentmonkey)
 // @compatible   chrome
-// @compatible   firefox Tested with Violentmonkey
+// @compatible   firefox
 // @compatible   edge
 // @compatible   opera
 // @compatible   safari
@@ -69,10 +70,10 @@
 (function () {
   'use strict';
 
-  console.log('[atp] Add to Project v2.6.1 loaded');
+  console.log('[atp] Add to Project v2.6.2 loaded');
 
   // ╔═══════════════════════════════════════════════════════════════════════════╗
-  // ║  ARCHITECTURE — Add to Project v2.6.1                                    ║
+  // ║  ARCHITECTURE — Add to Project v2.6.2                                    ║
   // ║                                                                          ║
   // ║  CSS ........................ Injected styles for atp-* buttons          ║
   // ║  UTILITIES .................. sleep, waitFor, isInArtifactPanel          ║
@@ -90,7 +91,7 @@
   // ║  SPA LIFECYCLE .............. cleanup, path observer, initial scan      ║
   // ╚═══════════════════════════════════════════════════════════════════════════╝
   //
-  // LIFECYCLE (v2.6.1)
+  // LIFECYCLE (v2.6.2)
   //   @match covers all claude.ai/* — script is always loaded in SPA.
   //   document-idle → initial scan (1500ms delay, only if on /chat/ page).
   //   SPA navigation → cleanup old buttons → delayed scan (800ms).
